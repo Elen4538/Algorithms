@@ -9,9 +9,9 @@ def merge(A, B):   #работа O(n) время работы линейное �
         else:
             Res.append(B[j]) 
             j += 1 
-    Res += A[i:] + B[j:] 
-  
+    Res += A[i:] + B[j:]   
     return Res  
+
 def MergeSort(A):    # O(nlogn) рекурсивная функция
     if len(A) <= 1: 
         return A 
@@ -19,7 +19,8 @@ def MergeSort(A):    # O(nlogn) рекурсивная функция
         middle=len(A)//2
         L = A[:middle] 
         R = A[middle:] 
-    return merge(MergeSort(L), MergeSort(R))   
+   
+return merge(MergeSort(L), MergeSort(R))   
 
 A=[int(s) for s in input().split()]
 print(*MergeSort(A))
