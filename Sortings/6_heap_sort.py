@@ -1,8 +1,8 @@
 # To heapify subtree rooted at index i. 
 # n is size of heap 
 
-def heapify(A,n,i):  #строим дерево по убыванию 
-    
+def heapify(A,n,i):  
+    # перебираем элементы с конца списка если у них есть потомки то просеиваем
     largest = i # Initialize largest as root 
     l = 2 * i + 1 # left index
     r= 2 * i + 2 # right index
@@ -21,7 +21,7 @@ def heapify(A,n,i):  #строим дерево по убыванию
                 
 def heapsort(A):
     
-    n = len(A) # длина списка
+    n = len(A) 
     
     for i in range(n//2,-1,-1): #build maxheap 
         
@@ -39,11 +39,4 @@ print(heapsort(A))
 
 
 
-# Driver
-arr = [ 12, 11, 13, 5, 6, 7] 
-heapsort(arr) 
-n = len(arr) 
-print ("Sorted array is") 
-for i in range(n): 
-    print ("%d" %arr[i])
-    
+
