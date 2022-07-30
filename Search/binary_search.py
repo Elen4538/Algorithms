@@ -19,7 +19,6 @@ def binarySearch(alist, item):
 testlist = [0, 1, 2, 8, 13, 17, 19, 32, 42,]
 print(binarySearch(testlist, 3))
 print(binarySearch(testlist, 13))
- # Step 1 of 42  
- #line that has just executed
+ 
  #время работы O(logN)
  
